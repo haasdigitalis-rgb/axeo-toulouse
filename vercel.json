@@ -10,5 +10,11 @@
         { "key": "X-XSS-Protection", "value": "1; mode=block" }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/services-pro/", "destination": "/services-pro/index.html" },
+    { "source": "/livraison-repas/", "destination": "/livraison-repas/index.html" },
+    { "source": "/mentions-legales/", "destination": "/mentions-legales/index.html" },
+    { "source": "/politique-confidentialite/", "destination": "/politique-confidentialite/index.html" }
   ]
-}
+} 
