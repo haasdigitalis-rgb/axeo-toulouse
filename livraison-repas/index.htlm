@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraison de Repas &agrave; Domicile Toulouse — AXEO Services | Portage Repas Seniors</title>
+  <meta name="description" content="Livraison de repas &agrave; domicile &agrave; Toulouse pour seniors et personnes d&eacute;pendantes. AXEO Services : repas &eacute;quilibr&eacute;s, livr&eacute;s chaque jour. Devis gratuit.">
+
+  <!-- Dexem Call Tracking – EN PREMIER avant tout -->
+  <script type="text/javascript" src="https://cdn.dexem.net/tags/cd0af6fe-4590-41b7-bf75-dbc14902646e/dexem.js"></script>
+
+  <!-- Consent Mode v2 – défaut refusé, Clickio (via GTM) gère la mise à jour -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TQXGW5Q9');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Ads AW-16876389962 géré via GTM (Balise Google + conversions) -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #F29400;
+      --orange-dark: #D98400;
+      --dark: #2D2D2D;
+      --grey: #6B7280;
+      --light: #F9FAFB;
+      --white: #FFFFFF;
+      --green: #22C55E;
+      --warm: #FFF7ED;
+      --radius: 12px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--dark);
+      line-height: 1.6;
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* === HEADER === */
+    .header {
+      background: var(--white);
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .header-logo {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--orange);
+      text-decoration: none;
+    }
+    .header-logo span { color: var(--dark); }
+    .header-phone {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--orange);
+      color: white;
+      padding: 10px 18px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: background 0.2s;
+    }
+    .header-phone:hover { background: var(--orange-dark); }
+
+    /* === HERO === */
+    .hero {
+      background: linear-gradient(135deg, #F29400 0%, #E08700 50%, #D97706 100%);
+      color: white;
+      padding: 60px 20px 50px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.5);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero h1 .highlight {
+      background: rgba(255,255,255,0.2);
+      padding: 2px 10px;
+      border-radius: 6px;
+    }
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.9);
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--dark);
+      color: white;
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: all 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover { background: #1a1a1a; transform: translateY(-1px); }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--dark);
+      padding: 14px 28px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border: none;
+      transition: all 0.2s;
+    }
+    .btn-secondary:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(0,0,0,0.15); }
+
+    /* === TRUST BAR === */
+    .trust-bar {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      padding: 20px;
+      background: var(--warm);
+      border-bottom: 1px solid #FDE68A;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--dark);
+    }
+
+    /* === SECTION === */
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--dark);
+    }
+    .section-subtitle {
+      text-align: center;
+      color: var(--grey);
+      font-size: 1.05rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* === WHO IS IT FOR === */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .audience-card {
+      background: var(--warm);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      text-align: center;
+      border: 1px solid #FDE68A;
+    }
+    .audience-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .audience-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .audience-card p {
+      color: var(--grey);
+      font-size: 0.95rem;
+    }
+
+    /* === FEATURES === */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .feature {
+      display: flex;
+      gap: 14px;
+      padding: 20px;
+      border-radius: var(--radius);
+      background: var(--light);
+    }
+    .feature-icon { font-size: 1.5rem; flex-shrink: 0; }
+    .feature h4 { font-weight: 700; margin-bottom: 4px; }
+    .feature p { color: var(--grey); font-size: 0.9rem; }
+
+    /* === PROCESS === */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .step {
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: white;
+      font-weight: 800;
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+    }
+    .step h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .step p { color: var(--grey); font-size: 0.95rem; }
+
+    /* === MENU EXAMPLE === */
+    .menu-section {
+      background: var(--warm);
+      padding: 60px 20px;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .menu-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 24px;
+      border: 1px solid #FDE68A;
+    }
+    .menu-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--orange);
+    }
+    .menu-card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .menu-card li {
+      padding: 6px 0;
+      color: var(--dark);
+      font-size: 0.95rem;
+      border-bottom: 1px solid #F3F4F6;
+    }
+    .menu-card li:last-child { border-bottom: none; }
+
+    /* === AVIS === */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .review-card {
+      background: var(--light);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .review-stars { color: var(--orange); font-size: 1.1rem; margin-bottom: 10px; }
+    .review-text {
+      font-style: italic;
+      color: var(--dark);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+    .review-author {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--grey);
+    }
+
+    /* === ZONES === */
+    .zones-section { background: var(--light); padding: 50px 20px; }
+    .zones-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .zone-tag {
+      background: var(--white);
+      border: 1px solid #E5E7EB;
+      padding: 8px 16px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* === FORM === */
+    .form-section {
+      background: linear-gradient(135deg, #F29400 0%, #D97706 100%);
+      padding: 60px 20px;
+    }
+    .form-section .section-title { color: white; }
+    .form-section .section-subtitle { color: rgba(255,255,255,0.85); }
+    .form-container {
+      max-width: 550px;
+      margin: 0 auto;
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px 28px;
+    }
+    .form-group { margin-bottom: 18px; }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      color: var(--dark);
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid #D1D5DB;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border 0.2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--orange);
+      box-shadow: 0 0 0 3px rgba(242,148,0,0.15);
+    }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-submit {
+      width: 100%;
+      padding: 14px;
+      background: var(--orange);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      font-family: inherit;
+    }
+    .form-submit:hover { background: var(--orange-dark); }
+    .form-note {
+      text-align: center;
+      color: var(--grey);
+      font-size: 0.8rem;
+      margin-top: 12px;
+    }
+
+    /* === FAQ === */
+    .faq-list { max-width: 700px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid #E5E7EB; padding: 18px 0; }
+    .faq-question {
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--orange);
+      flex-shrink: 0;
+    }
+    .faq-item.open .faq-question::after { content: '-'; }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      color: var(--grey);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-answer { max-height: 300px; padding-top: 12px; }
+
+    /* === FOOTER === */
+    .footer {
+      background: var(--dark);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.85rem;
+    }
+    .footer a { color: var(--orange); text-decoration: none; }
+
+    /* === STICKY CTA MOBILE === */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 99;
+      padding: 10px 16px;
+      background: var(--white);
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+    .sticky-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 14px;
+      background: var(--orange);
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+    @media (max-width: 768px) {
+      .sticky-cta { display: block; }
+      body { padding-bottom: 70px; }
+      .header-phone span { display: none; }
+      .hero { padding: 40px 16px 35px; }
+    }
+
+    /* Cookie banner géré par Clickio via GTM */
+  </style>
+</head>
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQXGW5Q9"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <!-- Bandeau cookies géré par Clickio via GTM -->
+
+  <!-- === HEADER === -->
+  <header class="header">
+    <a href="/" class="header-logo">AXEO <span>Services</span></a>
+    <a href="tel:+33531220021" class="header-phone" id="phone-header">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      <span>05 31 22 00 21</span>
+    </a>
+  </header>
+
+  <!-- === HERO === -->
+  <section class="hero">
+    <div class="hero-badge">&#127869; Service agr&eacute;&eacute; &bull; Livraison 7j/7 &agrave; Toulouse</div>
+    <h1>Livraison de <span class="highlight">Repas &agrave; Domicile</span> &agrave; Toulouse</h1>
+    <p class="hero-sub">Des repas &eacute;quilibr&eacute;s et savoureux, livr&eacute;s chaque jour chez vous ou chez vos proches. Id&eacute;al pour les seniors, convalescents et personnes &agrave; mobilit&eacute; r&eacute;duite.</p>
+    <div class="hero-ctas">
+      <a href="tel:+33531220021" class="btn-primary" id="phone-hero">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Appeler maintenant
+      </a>
+      <a href="#devis" class="btn-secondary">Demander un essai gratuit</a>
+    </div>
+  </section>
+
+  <!-- === TRUST BAR === -->
+  <div class="trust-bar">
+    <div class="trust-item">&#9989; Repas frais &amp; &eacute;quilibr&eacute;s</div>
+    <div class="trust-item">&#9989; Livraison 7j/7</div>
+    <div class="trust-item">&#9989; Adapt&eacute; r&eacute;gimes sp&eacute;ciaux</div>
+    <div class="trust-item">&#9989; Agr&eacute;ment SAP</div>
+  </div>
+
+  <!-- === POUR QUI === -->
+  <section class="section">
+    <h2 class="section-title">&Agrave; qui s'adresse ce service ?</h2>
+    <p class="section-subtitle">Le portage de repas AXEO est con&ccedil;u pour ceux qui ont besoin d'un coup de pouce au quotidien.</p>
+    <div class="audience-grid">
+      <div class="audience-card">
+        <div class="audience-icon">&#128116;</div>
+        <h3>Seniors autonomes</h3>
+        <p>Vous souhaitez bien manger sans la contrainte des courses et de la cuisine au quotidien.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon">&#129657;</div>
+        <h3>Personnes en convalescence</h3>
+        <p>Apr&egrave;s une hospitalisation ou une op&eacute;ration, recevez des repas adapt&eacute;s &agrave; votre r&eacute;cup&eacute;ration.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon">&#128106;</div>
+        <h3>Familles &amp; aidants</h3>
+        <p>Assurez &agrave; vos proches une alimentation &eacute;quilibr&eacute;e, m&ecirc;me quand vous n'&ecirc;tes pas l&agrave;.</p>
+      </div>
+      <div class="audience-card">
+        <div class="audience-icon">&#9855;</div>
+        <h3>Personnes &agrave; mobilit&eacute; r&eacute;duite</h3>
+        <p>Nous livrons directement chez vous, avec un service attentionn&eacute; et bienveillant.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- === COMMENT CA MARCHE === -->
+  <section style="background:var(--light); padding: 60px 20px;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 class="section-title">Comment &ccedil;a marche ?</h2>
+      <p class="section-subtitle">Un service simple, sans engagement et personnalis&eacute;.</p>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Appelez-nous</h3>
+          <p>Contactez-nous pour d&eacute;finir vos besoins : fr&eacute;quence, r&eacute;gime, allergies, pr&eacute;f&eacute;rences.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>On pr&eacute;pare vos repas</h3>
+          <p>Des menus vari&eacute;s et &eacute;quilibr&eacute;s, pr&eacute;par&eacute;s par des cuisiniers professionnels.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Livraison &agrave; domicile</h3>
+          <p>Livr&eacute;s chez vous chaque jour ou plusieurs fois par semaine, selon votre choix.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Vous r&eacute;chauffez et d&eacute;gustez</h3>
+          <p>Repas pr&ecirc;ts en quelques minutes au micro-ondes. Savoureux et nourrissants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === AVANTAGES === -->
+  <section class="section">
+    <h2 class="section-title">Les avantages AXEO Services</h2>
+    <p class="section-subtitle">Bien plus qu'une simple livraison de repas.</p>
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon">&#127860;</div>
+        <div>
+          <h4>Menus vari&eacute;s chaque semaine</h4>
+          <p>Entr&eacute;e, plat, dessert — des menus qui changent pour ne jamais se lasser.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#129382;</div>
+        <div>
+          <h4>Adapt&eacute; aux r&eacute;gimes sp&eacute;ciaux</h4>
+          <p>Sans sel, diab&eacute;tique, sans gluten, textures modifi&eacute;es... Nous nous adaptons.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128666;</div>
+        <div>
+          <h4>Livraison souple</h4>
+          <p>Tous les jours, 3x/semaine ou &agrave; la carte. Suspension possible &agrave; tout moment.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128176;</div>
+        <div>
+          <h4>Aides financi&egrave;res possibles</h4>
+          <p>Agr&eacute;ment SAP : &eacute;ligible APA, aide de la caisse de retraite, mutuelle.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128149;</div>
+        <div>
+          <h4>Lien social pr&eacute;serv&eacute;</h4>
+          <p>Nos livreurs prennent le temps d'un mot, d'un sourire. Un moment de contact quotidien.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">&#128274;</div>
+        <div>
+          <h4>Sans engagement</h4>
+          <p>Essayez librement. Arr&ecirc;tez ou modifiez votre formule quand vous le souhaitez.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === EXEMPLE MENU === -->
+  <section class="menu-section">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 class="section-title">Exemple de menus de la semaine</h2>
+      <p class="section-subtitle">Des repas complets, savoureux et pr&eacute;par&eacute;s avec soin.</p>
+      <div class="menu-grid">
+        <div class="menu-card">
+          <h3>&#127774; Lundi</h3>
+          <ul>
+            <li>Salade de carottes r&acirc;p&eacute;es</li>
+            <li>Filet de poulet, haricots verts</li>
+            <li>Compote de pommes maison</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>&#127774; Mercredi</h3>
+          <ul>
+            <li>Soupe de l&eacute;gumes</li>
+            <li>Saumon, riz et &eacute;pinards</li>
+            <li>Yaourt nature et fruits</li>
+          </ul>
+        </div>
+        <div class="menu-card">
+          <h3>&#127774; Vendredi</h3>
+          <ul>
+            <li>Terrine de campagne</li>
+            <li>Boeuf bourguignon, pommes de terre</li>
+            <li>Cr&egrave;me caramel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === AVIS === -->
+  <section class="section">
+    <h2 class="section-title">T&eacute;moignages de nos b&eacute;n&eacute;ficiaires</h2>
+    <p class="section-subtitle">Ce que disent les familles et b&eacute;n&eacute;ficiaires du service.</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&laquo; Maman adore les repas. C'est vari&eacute;, bien pr&eacute;sent&eacute; et le livreur est toujours aimable. On est rassur&eacute;s. &raquo;</p>
+        <div class="review-author">H&eacute;l&egrave;ne R. &mdash; Fille d'une b&eacute;n&eacute;ficiaire, Toulouse</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&laquo; Apr&egrave;s mon op&eacute;ration du genou, le portage de repas m'a permis de me concentrer sur ma r&eacute;&eacute;ducation. Merci AXEO ! &raquo;</p>
+        <div class="review-author">Jean-Pierre M. &mdash; B&eacute;n&eacute;ficiaire, Balma</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="review-text">&laquo; Les menus changent chaque semaine et respectent mon r&eacute;gime sans sel. Je ne pourrais plus m'en passer. &raquo;</p>
+        <div class="review-author">Monique L. &mdash; B&eacute;n&eacute;ficiaire, Colomiers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === ZONES === -->
+  <section class="zones-section">
+    <h2 class="section-title">Zones de livraison</h2>
+    <p class="section-subtitle">Nous livrons &agrave; Toulouse et dans l'agglom&eacute;ration.</p>
+    <div class="zones-list">
+      <span class="zone-tag">Toulouse Centre</span>
+      <span class="zone-tag">Blagnac</span>
+      <span class="zone-tag">Colomiers</span>
+      <span class="zone-tag">Tournefeuille</span>
+      <span class="zone-tag">Balma</span>
+      <span class="zone-tag">Ramonville</span>
+      <span class="zone-tag">Castanet-Tolosan</span>
+      <span class="zone-tag">Muret</span>
+      <span class="zone-tag">L'Union</span>
+      <span class="zone-tag">Saint-Orens</span>
+      <span class="zone-tag">Launaguet</span>
+      <span class="zone-tag">Cugnaux</span>
+      <span class="zone-tag">Plaisance-du-Touch</span>
+      <span class="zone-tag">Tout le 31</span>
+    </div>
+  </section>
+
+  <!-- === FORMULAIRE === -->
+  <section class="form-section" id="devis">
+    <h2 class="section-title">Essayez le portage de repas gratuitement</h2>
+    <p class="section-subtitle">Premi&egrave;re livraison offerte &mdash; Sans engagement</p>
+    <div class="form-container">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Nom &amp; Pr&eacute;nom du b&eacute;n&eacute;ficiaire</label>
+          <input type="text" id="name" name="name" placeholder="Jean Dupont" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">T&eacute;l&eacute;phone *</label>
+          <input type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email (ou celui d'un proche)</label>
+          <input type="email" id="email" name="email" placeholder="contact@email.fr">
+        </div>
+        <div class="form-group">
+          <label for="regime">R&eacute;gime alimentaire</label>
+          <select id="regime" name="regime">
+            <option value="">-- S&eacute;lectionnez --</option>
+            <option value="normal">Normal (aucune restriction)</option>
+            <option value="sans-sel">Sans sel</option>
+            <option value="diabetique">Diab&eacute;tique</option>
+            <option value="sans-gluten">Sans gluten</option>
+            <option value="texture-modifiee">Texture modifi&eacute;e (mix&eacute;/moulin&eacute;)</option>
+            <option value="autre">Autre (pr&eacute;cisez ci-dessous)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="frequence">Fr&eacute;quence souhait&eacute;e</label>
+          <select id="frequence" name="frequence">
+            <option value="">-- S&eacute;lectionnez --</option>
+            <option value="7j">Tous les jours (7j/7)</option>
+            <option value="5j">En semaine (lundi au vendredi)</option>
+            <option value="3j">3 fois par semaine</option>
+            <option value="ponctuel">Ponctuel / &agrave; la carte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Informations compl&eacute;mentaires</label>
+          <textarea id="message" name="message" placeholder="Adresse de livraison, allergies, pr&eacute;cisions..."></textarea>
+        </div>
+        <button type="submit" class="form-submit">Demander mon essai gratuit</button>
+        <p class="form-note">&#128274; Vos donn&eacute;es restent confidentielles. &Eacute;ligible APA et aides caisses de retraite.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- === FAQ === -->
+  <section class="section">
+    <h2 class="section-title">Questions fr&eacute;quentes</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Combien co&ucirc;te le portage de repas ?</div>
+        <div class="faq-answer">Le tarif d&eacute;pend de la formule choisie (nombre de repas, r&eacute;gime sp&eacute;cial). Contactez-nous pour un devis personnalis&eacute;. Avec l'agr&eacute;ment SAP, vous pouvez b&eacute;n&eacute;ficier d'aides (APA, caisse de retraite, mutuelle).</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Les repas sont-ils adapt&eacute;s aux r&eacute;gimes sp&eacute;ciaux ?</div>
+        <div class="faq-answer">Oui, nous proposons des menus adapt&eacute;s : sans sel, diab&eacute;tique, sans gluten, textures modifi&eacute;es (mix&eacute;, moulin&eacute;). Signalez vos besoins lors de l'inscription.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Puis-je suspendre ou annuler le service ?</div>
+        <div class="faq-answer">Oui, le service est sans engagement. Vous pouvez suspendre ou arr&ecirc;ter la livraison &agrave; tout moment, avec un simple appel t&eacute;l&eacute;phonique.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">Comment se passe la livraison ?</div>
+        <div class="faq-answer">Nos livreurs apportent vos repas directement chez vous, &agrave; des cr&eacute;neaux r&eacute;guliers. Les repas sont livr&eacute;s en barquettes individuelles &agrave; r&eacute;chauffer au micro-ondes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">L'APA couvre-t-elle le portage de repas ?</div>
+        <div class="faq-answer">Oui, l'APA (Allocation Personnalis&eacute;e d'Autonomie) peut couvrir une partie du co&ucirc;t du portage de repas. D'autres aides existent via les caisses de retraite et mutuelles. Nous vous accompagnons dans les d&eacute;marches.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- === FOOTER === -->
+  <footer class="footer">
+    <p>AXEO Services Toulouse &mdash; Livraison de repas &agrave; domicile &mdash; Agr&eacute;ment SAP</p>
+    <p style="margin-top:6px;"><a href="/mentions-legales/">Mentions l&eacute;gales</a> &bull; <a href="/politique-confidentialite/">Politique de confidentialit&eacute;</a></p>
+    <p style="margin-top:6px;">&copy; 2026 AXEO Services Toulouse. Tous droits r&eacute;serv&eacute;s.</p>
+  </footer>
+
+  <!-- === STICKY CTA MOBILE === -->
+  <div class="sticky-cta">
+    <a href="tel:+33531220021" id="phone-sticky">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Appeler AXEO Toulouse
+    </a>
+  </div>
+
+  <!-- === SCRIPTS === -->
+  <script>
+    // FAQ Toggle
+    function toggleFaq(el) {
+      el.parentElement.classList.toggle('open');
+    }
+
+    // Consentement cookies géré par Clickio via GTM
+
+    // Form Submission – REMPLACER WEBHOOK_URL par votre URL Google Sheets
+    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var btn = this.querySelector('button[type="submit"]');
+      var originalText = btn.textContent;
+      btn.textContent = 'Envoi en cours...';
+      btn.disabled = true;
+
+      var formData = {
+        source: 'axeo-toulouse-livraison-repas',
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        regime: document.getElementById('regime').value,
+        frequence: document.getElementById('frequence').value,
+        message: document.getElementById('message').value,
+        date: new Date().toLocaleString('fr-FR')
+      };
+
+      try {
+        await fetch('WEBHOOK_URL_HERE', {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(formData)
+        });
+      } catch (error) {
+        // no-cors prevents error detection
+      }
+
+      btn.textContent = 'Demande envoyee !';
+      btn.style.backgroundColor = '#22C55E';
+      this.reset();
+      setTimeout(function() {
+        btn.textContent = originalText;
+        btn.style.backgroundColor = '#F29400';
+        btn.disabled = false;
+      }, 3000);
+    });
+  </script>
+
+</body>
+</html>
