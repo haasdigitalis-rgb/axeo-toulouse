@@ -1,0 +1,68 @@
+/**
+ * AXEO Services Toulouse — Google Consent Mode v2
+ * Conforme CNIL — Refus par défaut
+ * MARHEL SERVICES / SIREN 534 855 762
+ */
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+// ── 1. Défaut REFUSÉ (avant tout chargement GTM/GA/Ads)
+gtag('consent', 'default', {
+  analytics_storage:     'denied',
+  ad_storage:            'denied',
+  ad_user_data:          'denied',
+  ad_personalization:    'denied',
+  wait_for_update:       500
+});
+
+// ── 2. Restauration du choix existant
+(function() {
+  var choice = localStorage.getItem('axeo_consent');
+  if (choice === 'granted') _grantAll();
+})();
+
+// ── 3. Fonctions internes
+function _grantAll() {
+  gtag('consent', 'update', {
+    analytics_storage:  'granted',
+    ad_storage:         'granted',
+    ad_user_data:       'granted',
+    ad_personalization: 'granted'
+  });
+}
+function _denyAll() {
+  gtag('consent', 'update', {
+    analytics_storage:  'denied',
+    ad_storage:         'denied',
+    ad_user_data:       'denied',
+    ad_personalization: 'denied'
+  });
+}
+
+// ── 4. Fonctions publiques (appelées par les boutons)
+function acceptCookies() {
+  _grantAll();
+  localStorage.setItem('axeo_consent', 'granted');
+  hideBanner();
+}
+function refuseCookies() {
+  _denyAll();
+  localStorage.setItem('axeo_consent', 'denied');
+  hideBanner();
+}
+function hideBanner() {
+  var b = document.getElementById('cookie-banner');
+  if (b) {
+    b.style.transform = 'translateY(100%)';
+    setTimeout(function(){ b.style.display = 'none'; }, 350);
+  }
+}
+
+// ── 5. Affichage bandeau si aucun choix enregistré
+document.addEventListener('DOMContentLoaded', function() {
+  if (!localStorage.getItem('axeo_consent')) {
+    var b = document.getElementById('cookie-banner');
+    if (b) b.classList.add('show');
+  }
+});
